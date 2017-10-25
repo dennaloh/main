@@ -241,6 +241,13 @@ public class AddressBook implements ReadOnlyAddressBook {
         persons.sortPersons();
     }
 
+    /**
+     * Sorts the persons according to email
+     */
+    public void sortPersonListByEmail() {
+        persons.sortPersonsByEmail();
+    }
+
 
     /*****************************************************
      * Tag-level operations

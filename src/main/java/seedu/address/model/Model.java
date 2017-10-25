@@ -64,6 +64,9 @@ public interface Model {
     /** Sorts the persons list according to name */
     void sortPersonList();
 
+    /** Sorts the persons list according to email */
+    void sortPersonListByEmail();
+
     /** Adds an event */
     void addEvent(ReadOnlyEvent event) throws DuplicateEventException;
 

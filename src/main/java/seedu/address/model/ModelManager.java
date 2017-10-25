@@ -183,6 +183,12 @@ public class ModelManager extends ComponentManager implements Model {
     }
 
     @Override
+    public void sortPersonListByEmail() {
+        addressBook.sortPersonListByEmail();
+        indicateAddressBookChanged();
+    }
+
+    @Override
     public synchronized void deleteEvent(ReadOnlyEvent event) throws EventNotFoundException {
         addressBook.removeEvent(event);
         indicateAddressBookChanged();

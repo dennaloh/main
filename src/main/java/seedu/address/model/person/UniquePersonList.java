@@ -50,12 +50,20 @@ public class UniquePersonList implements Iterable<Person> {
     }
 
     /**
-     * Sorts the persons based on time
+     * Sorts the persons based on name
      *
      */
     public void sortPersons() {
         internalList.sort((e1, e2) -> (e1.getName().toString()
                 .compareTo(e2.getName().toString())));
+    }
+
+    /**
+     * Sorts the persons based on email
+     */
+    public void sortPersonsByEmail() {
+        internalList.sort((e1, e2) -> (e1.getEmail().toString()
+                .compareTo(e2.getEmail().toString())));
     }
 
     /**
